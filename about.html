@@ -1,4 +1,4 @@
-﻿<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#17221d"><title>About · FORGEFIT</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#17221d"><title>About · FORGEFIT</title><style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
 :root{
  --bg:#f4efe6;--paper:#fffdf8;--ink:#17221d;--muted:#65716b;--accent:#e75b2b;
@@ -206,6 +206,12 @@ footer{padding:28px 0 20px;background:var(--dark);color:#fff;text-align:center}.
  .wheel-copy h3{font-size:28px}
  .wheel-copy .mini-list{grid-template-columns:1fr 1fr}
  .flow-center{height:205px}.timer-ring{width:125px;height:125px}.timer-ring:after{width:96px;height:96px}
+}
+
+@media(max-width:850px){
+  .pulse-layout {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 /* FINAL SCREENSHOT FIXES */
@@ -616,7 +622,7 @@ html,body{width:100%;max-width:100%;overflow-x:hidden!important}
 </div></div></section>
 
 <section><div class="shell"><div class="section-head reveal"><span class="kicker">03 · The FORGEFIT pulse</span><h2>Progress has a rhythm.</h2><p>Our visual performance tracker turns the invisible parts of training into a calm, readable signal.</p></div>
-<div class="panel reveal" style="padding:28px;overflow:hidden"><div style="display:grid;grid-template-columns:1.2fr .8fr;gap:22px;align-items:center">
+<div class="panel reveal" style="padding:28px;overflow:hidden"><div class="pulse-layout" style="display:grid;grid-template-columns:1.2fr .8fr;gap:22px;align-items:center">
 <div style="height:270px;position:relative;background:repeating-linear-gradient(to bottom,transparent 0,transparent 52px,#17221d10 53px);border-radius:18px;overflow:hidden">
 <svg viewBox="0 0 900 270" preserveAspectRatio="none" style="width:100%;height:100%"><path d="M0 215C80 202 110 165 175 184S275 221 340 142S445 95 510 150S610 172 680 84S775 102 900 38" fill="none" stroke="#e75b2b" stroke-width="7" stroke-linecap="round"/><path d="M0 215C80 202 110 165 175 184S275 221 340 142S445 95 510 150S610 172 680 84S775 102 900 38L900 270H0Z" fill="#e75b2b10"/><circle cx="680" cy="84" r="10" fill="#c9e86a"><animate attributeName="r" values="7;15;7" dur="1.7s" repeatCount="indefinite"/></circle></svg>
 </div>
